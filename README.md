@@ -1,6 +1,6 @@
 # go-pingdom #
 
-[![Build Status](https://travis-ci.org/nordcloud/go-pingdom.svg?branch=master)](https://travis-ci.org/nordcloud/go-pingdom) [![Go Report Card](https://goreportcard.com/badge/github.com/nordcloud/go-pingdom/pingdom)](https://goreportcard.com/report/github.com/nordcloud/go-pingdom/pingdom) [![GoDoc](https://godoc.org/github.com/nordcloud/go-pingdom/pingdom?status.svg)](https://godoc.org/github.com/nordcloud/go-pingdom/pingdom)
+[![Build Status](https://travis-ci.org/rk295/go-pingdom.svg?branch=master)](https://travis-ci.org/rk295/go-pingdom) [![Go Report Card](https://goreportcard.com/badge/github.com/rk295/go-pingdom/pingdom)](https://goreportcard.com/report/github.com/rk295/go-pingdom/pingdom) [![GoDoc](https://godoc.org/github.com/rk295/go-pingdom/pingdom?status.svg)](https://godoc.org/github.com/rk295/go-pingdom/pingdom)
 
 go-pingdom is a Go client library for the Pingdom API.
 
@@ -550,7 +550,7 @@ he accepts the invitation manually.
 
 ```go
 user := User{
-    Email: "sombody@nordcloud.com",
+    Email: "sombody@rk295.com",
     Role: "ADMIN"
     Products: []Product{
         {
@@ -566,7 +566,7 @@ Update an user. User information will be updated if the user has already accepte
 not yet been accepted, the invitation will be revoked and a new one with the updated information will be sent.
 ```go
 update := User{
-    Email: "sombody@nordcloud.com",
+    Email: "sombody@rk295.com",
     Role: "ADMIN"
     Products: []Product{
     {
@@ -581,7 +581,7 @@ Delete an user. It is not possible to delete an active user in Solarwinds. If it
 return error with proper status code set, no user will be deleted. If it is an invitation, the invitation will be revoked.
 
 ```go
-email = "somebody@nordcloud.com"
+email = "somebody@rk295.com"
 
 err := client.UserService.Delete(email)
 ```
@@ -589,7 +589,7 @@ err := client.UserService.Delete(email)
 Retrieve an user. It can either be an invitation or an active user.
 
 ```go
-email = "sombody@nordcloud.com"
+email = "sombody@rk295.com"
 
 err := client.UserService.Retrieve(email)
 ```

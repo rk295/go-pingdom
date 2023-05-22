@@ -3,16 +3,17 @@ package solarwinds
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/stretchr/testify/assert"
 	"net/http"
 	"testing"
+
+	"github.com/stretchr/testify/assert"
 )
 
 // TODO: These values are from the mock response strings. Ideally they should be randomly generated on each test run.
 const (
-	activeUserEmail   = "foo@nordcloud.com"
+	activeUserEmail   = "foo@kearney.co.uk"
 	activeUserId      = "23285292452068352"
-	nonExistUserEmail = "other@nordcloud.com"
+	nonExistUserEmail = "other@kearney.co.uk"
 	pendingUserEmail  = "5et54o0OtS@foo.com"
 )
 

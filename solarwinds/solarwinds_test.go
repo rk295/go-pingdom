@@ -2,13 +2,14 @@ package solarwinds
 
 import (
 	"fmt"
-	"github.com/stretchr/testify/assert"
-	"golang.org/x/net/html"
 	"net/http"
 	"net/http/httptest"
 	"os"
 	"strings"
 	"testing"
+
+	"github.com/stretchr/testify/assert"
+	"golang.org/x/net/html"
 )
 
 var (
@@ -24,7 +25,7 @@ func setup() {
 
 	// test client
 	client, _ = NewClient(ClientConfig{
-		Username: "chszchen@nordcloud.com",
+		Username: "chszchen@kearney.co.uk",
 		Password: "abcdefg",
 	})
 	client.baseURL = server.URL

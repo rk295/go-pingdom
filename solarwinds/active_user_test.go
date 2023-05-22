@@ -3,9 +3,10 @@ package solarwinds
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/stretchr/testify/assert"
 	"net/http"
 	"testing"
+
+	"github.com/stretchr/testify/assert"
 )
 
 const (
@@ -21,8 +22,8 @@ const (
             "user": {
               "id": "23285292452068352",
               "firstName": "IT",
-              "lastName": "Nordcloud",
-              "email": "foo@nordcloud.com",
+              "lastName": "Kearney",
+              "email": "foo@kearney.co.uk",
               "lastLogin": "2021-03-23T07:17:48Z",
               "__typename": "User"
             },
@@ -52,9 +53,9 @@ const (
           {
             "user": {
               "id": "74914272581727232",
-              "firstName": "Nordcloud",
+              "firstName": "Rob",
               "lastName": "MC-Tooling",
-              "email": "bar@nordcloud.com",
+              "email": "bar@kearney.co.uk",
               "lastLogin": "2021-03-24T23:04:56Z",
               "__typename": "User"
             },
@@ -100,7 +101,7 @@ const (
           {
             "id": "106586091288584192",
             "user": {
-              "email": "foo@nordcloud.com",
+              "email": "foo@kearney.co.uk",
               "__typename": "User"
             },
             "role": "ADMIN",
@@ -194,7 +195,7 @@ func TestGetActiveUser(t *testing.T) {
 	members := userList.Organization.Members
 	assert.Equal(t, len(members), 1)
 	member := members[0]
-	assert.Equal(t, "foo@nordcloud.com", member.User.Email)
+	assert.Equal(t, "foo@kearney.co.uk", member.User.Email)
 }
 
 func TestUpdateActiveUser(t *testing.T) {
