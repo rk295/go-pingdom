@@ -1,10 +1,11 @@
 package acceptance
 
 import (
-	"github.com/nordcloud/go-pingdom/solarwinds"
-	"github.com/stretchr/testify/assert"
 	"os"
 	"testing"
+
+	"github.com/rk295/go-pingdom/solarwinds"
+	"github.com/stretchr/testify/assert"
 )
 
 var (

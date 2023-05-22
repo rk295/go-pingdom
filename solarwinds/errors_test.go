@@ -3,12 +3,13 @@ package solarwinds
 import (
 	"errors"
 	"fmt"
-	"github.com/stretchr/testify/assert"
 	"testing"
+
+	"github.com/stretchr/testify/assert"
 )
 
 func TestClientErrors(t *testing.T) {
-	user := RandString(10) + "@nordcloud.com"
+	user := RandString(10) + "@kearney.co.uk"
 	errs := []error{
 		NewErrorAttemptDeleteActiveUser(user),
 		NewNetworkError(errors.New("underlying network error")),

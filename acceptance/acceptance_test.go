@@ -6,10 +6,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/nordcloud/go-pingdom/solarwinds"
-
-	"github.com/nordcloud/go-pingdom/pingdom"
 	"github.com/stretchr/testify/assert"
+
+	"github.com/rk295/go-pingdom/pingdom"
+	"github.com/rk295/go-pingdom/solarwinds"
 )
 
 var client *pingdom.Client

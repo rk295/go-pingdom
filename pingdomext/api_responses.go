@@ -1,7 +1,7 @@
 package pingdomext
 
 import (
-	"github.com/nordcloud/go-pingdom/pingdom"
+	"github.com/rk295/go-pingdom/pingdom"
 )
 
 type errorJSONResponse struct {
